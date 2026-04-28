@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>破壳 — 你是哪只宝可梦？</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="debug-panel"></div>
+
+  <div class="tamagotchi-shell">
+
+    <!-- 顶部指示灯 -->
+    <div class="shell-top">
+      <div class="indicator"></div>
+      <div class="indicator active"></div>
+      <div class="indicator"></div>
+    </div>
+
+    <!-- 屏幕 -->
+    <div class="screen-frame" id="screen">
+      <div class="screen-header">* EGG *</div>
+      <div id="game-text"></div>
+      <div id="game-choices"></div>
+    </div>
+
+    <!-- 底部按钮 -->
+    <div class="shell-bottom">
+      <div class="dpad">
+        <div class="dpad-h"></div>
+        <div class="dpad-v"></div>
+        <div class="dpad-center"></div>
+      </div>
+      <div class="ab-buttons">
+        <div class="btn-ab btn-b"></div>
+        <div class="btn-ab btn-a"></div>
+      </div>
+    </div>
+
+    <div class="shell-logo">POCKET EGG</div>
+
+  </div>
+
+  <script src="game-data.js"></script>
+  <script src="game-engine.js"></script>
+</body>
+</html>
